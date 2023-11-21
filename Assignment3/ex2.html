@@ -1,0 +1,30 @@
+Exercise : JavaScript Debugging 
+
+ Problem Statement:
+
+You've been given a simple JavaScript code snippet that's intended to toggle the visibility of an element when a button is clicked. However, it's not working as expected.
+
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Element</title>
+</head>
+<body>
+    <button onclick="toggleElement()">Toggle Element</button>
+    <div id="target" style="display: none;">This is the target element.</div>
+
+    <script>
+        function toggleElement() {
+            var element = document.getElementById("target");
+            var displayStyle = window.getComputedStyle(element).getPropertyValue("display");
+            element.style.display = (element.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
+
+CHANGES MADE: ERROR-STYLE IS SET INLINE IN THE HTML element.style.display INITIALLY DOES NOT HAVE ANY VALUE .TO FIX THIS WE CAN USE ' window.getComputedStyle'TO GET COMPOUND STYLE OF THE ELEMENT
+

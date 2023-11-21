@@ -1,0 +1,37 @@
+<!-- CSS TROUBLESHOOT EXERCISE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Container</title>
+<style>
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+margin: auto;
+width: 50%;
+background-color: #f0f0f0;
+padding: 20px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Centered Container</h1>
+<p>This container should be centered on the page.</p>
+</div>
+</body>
+</html>
+ ISSUE: issue in the provided CSS code is that the container has a percentage-based width (width: 50%;) without a specified height and the margin: auto;
+
+SOLUTION:there is no body tag in the css code so  I added a body style tag with display: flex;, align-items: center;, and justify-content: center; to center the container both horizontally and vertically.
+I set the height: 100vh; on the body to make sure the container is centered even if the content is not enough to fill the entire viewport.
+I also added text-align: center; to the .container style to center the content within the container.

@@ -1,0 +1,48 @@
+Exercise 2: Debugging CSS Styling Issues
+Objective: Identify and fix CSS styling issues to achieve the desired layout.
+
+This code snippet with HTML and CSS code that creates a specific layout, but contains CSS issues like misalignment, overlapping elements, or incorrect colors.
+Debug the CSS to achieve the desired layout.
+
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styling Debugging Exercise</title>
+<style>
+body{
+    margin: 0;
+}
+.container {
+width: 100%;
+box-sizing: border-box;
+background-color: #f0f0f0;
+padding: 20px;
+display: flex;
+justify-content: space-around;
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: #007bff;
+color: #ffffff;
+text-align: center;
+line-height: 100px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>
+
+changes:set body margin to 0
+set .container width to 100% and added box-sizing
+used flex on container for easy alignment & set justify-content to space out the boxes evenly
